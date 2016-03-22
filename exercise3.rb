@@ -73,3 +73,26 @@ end
 #while true
 #  puts "I'm an infinite loop!"
 #end
+
+3.times do
+  puts "Chunky bacon!"
+end
+# single line code for short codes like above
+
+3.times { puts "Chunky bacon!" }
+
+
+# .each example
+one_to_five = (1..5)
+
+one_to_five.each do |num|
+  puts num
+end
+
+# or to make it shorter...
+
+one_to_five.each {|num| puts num}
+
+# increasing the number from and .each iterator
+
+one_to_five.each {|num| puts (num**2).to_s}  # .to_s convert to a string
